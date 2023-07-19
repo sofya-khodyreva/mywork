@@ -1,0 +1,5 @@
+f=open('24-2.txt').readline()
+f=f.replace('CAT','*').replace('FROG','X')
+f=f.replace('DOG','X').replace('MOUSE','X')
+f=f.split('*')
+print(len(max(f, key=len)))
